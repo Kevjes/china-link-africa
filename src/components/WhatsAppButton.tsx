@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "./ui/Button";
 
 export default function WhatsAppButton() {
-    const phoneNumber = "YOUR_WHATSAPP_NUMBER"; // Placeholder, normally should be in env or config
+    const phoneNumber = "8615041636209";
     const message = "Bonjour, j'ai besoin d'assistance pour SAO Chine.";
 
     return (
