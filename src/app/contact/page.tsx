@@ -4,8 +4,8 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "Contactez-nous - SAO Chine",
-    description: "Entrez en contact avec l'équipe SAO Chine.",
+    title: "Contactez-nous - China Link Africa",
+    description: "Entrez en contact avec l'équipe China Link Africa.",
 };
 
 export default function ContactPage() {
@@ -24,8 +24,8 @@ export default function ContactPage() {
 
                         <div className="relative h-64 w-full rounded-2xl overflow-hidden mb-8 shadow-lg">
                             <Image
-                                src="/images/contact.jpg"
-                                alt="Contact support"
+                                src="/images/contact.png"
+                                alt="Equipe China Link Africa"
                                 fill
                                 className="object-cover"
                             />
@@ -49,7 +49,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900">Email</h3>
-                                    <p className="text-gray-600 mt-1">contact@sao-chine.com</p>
+                                    <p className="text-gray-600 mt-1">contact@chinalinkafrica.com</p>
                                 </div>
                             </div>
 
@@ -67,7 +67,8 @@ export default function ContactPage() {
                     </div>
 
                     {/* Contact Form */}
-                    <div>
+                    <div className="bg-white p-8 rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100">
+                        <h2 className="text-2xl font-bold mb-8 text-gray-900">Envoyez-nous un message</h2>
                         <ApplicationForm />
                     </div>
 

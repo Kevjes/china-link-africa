@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ApplicationForm from "@/components/ApplicationForm";
 
 export const metadata: Metadata = {
-    title: "Postuler - SAO Chine",
-    description: "Candidature en ligne pour les bourses d'études et services SAO Chine.",
+    title: "Postuler - China Link Africa",
+    description: "Candidature en ligne pour les bourses d'études et services China Link Africa.",
 };
 
 export default function ApplyPage() {

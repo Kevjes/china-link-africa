@@ -11,11 +11,18 @@ export default function VoyagePage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Header */}
-            <div className="relative bg-gray-900 py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Guide Voyage Chine</h1>
-                        <p className="mt-6 text-lg leading-8 text-gray-300">
+            <div className="relative h-[400px] w-full">
+                <Image
+                    src="/images/tourism&visa.png"
+                    alt="Tourisme en Chine"
+                    fill
+                    className="object-cover brightness-75"
+                    priority
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center text-white">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Guide Voyage Chine</h1>
+                        <p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl mx-auto">
                             Préparez votre départ sereinement. Tout savoir sur les visas, la vie sur place et les destinations incontournables.
                         </p>
                     </div>
@@ -78,8 +85,8 @@ export default function VoyagePage() {
                             <p className="text-gray-600">Le cœur politique et culturel. Visitez la Grande Muraille, la Cité Interdite et les Hutongs traditionnels.</p>
                             <div className="h-64 relative rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/greatwall.jpg"
-                                    alt="Grande Muraille de Chine"
+                                    src="/images/administration&visa.png"
+                                    alt="Administration & Visa"
                                     fill
                                     className="object-cover hover:scale-105 transition-transform duration-500"
                                 />
@@ -102,25 +109,30 @@ export default function VoyagePage() {
 
                 {/* Practical Info */}
                 <section>
-                    <h2 className="text-3xl font-bold mb-8 text-primary">Vie Pratique</h2>
-                    <div className="bg-red-50 p-8 rounded-2xl">
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h4 className="font-bold text-lg mb-2">Applications Indispensables</h4>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>📱 <strong>WeChat</strong> : Communication & Paiement (Vital !)</li>
-                                    <li>💳 <strong>Alipay</strong> : Paiements mobiles alternatifs</li>
-                                    <li>🗺️ <strong>Baidu Maps</strong> / <strong>Gaode</strong> : Pour se repérer</li>
-                                    <li>🚗 <strong>Didi</strong> : Le Uber chinois</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="font-bold text-lg mb-2">Urgences</h4>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>👮 Police : <strong>110</strong></li>
-                                    <li>🚑 Ambulance : <strong>120</strong></li>
-                                    <li>🚒 Pompiers : <strong>119</strong></li>
-                                </ul>
+                    <div className="bg-red-50 rounded-3xl overflow-hidden shadow-lg border border-red-100 flex flex-col lg:flex-row">
+                        <div className="relative h-64 lg:h-auto lg:w-1/3 min-h-[300px]">
+                            <Image src="/images/culture&vie.png" alt="Culture Chinoise" fill className="object-cover" />
+                        </div>
+                        <div className="p-8 lg:p-12 flex-1">
+                            <h2 className="text-3xl font-bold mb-8 text-primary">Vie Pratique</h2>
+                            <div className="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 className="font-bold text-lg mb-2 text-gray-900">Applications Indispensables</h4>
+                                    <ul className="space-y-2 text-gray-700">
+                                        <li>📱 <strong>WeChat</strong> : Communication & Paiement (Vital !)</li>
+                                        <li>💳 <strong>Alipay</strong> : Paiements mobiles alternatifs</li>
+                                        <li>🗺️ <strong>Baidu Maps</strong> / <strong>Gaode</strong> : Pour se repérer</li>
+                                        <li>🚗 <strong>Didi</strong> : Le Uber chinois</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-lg mb-2 text-gray-900">Urgences</h4>
+                                    <ul className="space-y-2 text-gray-700">
+                                        <li>👮 Police : <strong>110</strong></li>
+                                        <li>🚑 Ambulance : <strong>120</strong></li>
+                                        <li>🚒 Pompiers : <strong>119</strong></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "Bourses d'Études - SAO Chine",
+    title: "Bourses d'Études - China Link Africa",
     description: "Liste complète des bourses d'études disponibles en Chine : CSC, Gouvernement Provincial, Universités.",
 };
 
@@ -72,10 +72,10 @@ export default function BoursesPage() {
             {/* Visual Header */}
             <div className="relative h-[300px] w-full mb-10">
                 <Image
-                    src="/images/students.jpg"
+                    src="/images/scholarships.png"
                     alt="Étudiants diplômés"
                     fill
-                    className="object-cover brightness-50"
+                    className="object-cover brightness-75"
                     priority
                 />
                 <div className="absolute inset-0 flex items-center justify-center">

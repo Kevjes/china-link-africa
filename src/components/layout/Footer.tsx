@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Globe, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -10,9 +11,9 @@ export default function Footer() {
             <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8">
-                        <div className="flex items-center gap-2">
-                            <Globe className="h-8 w-8 text-primary" />
-                            <span className="text-2xl font-bold">SAO Chine</span>
+                        <div className="flex items-center gap-2 mb-4 p-4 rounded-xl inline-flex">
+                            <Image src="/images/logo.png" alt="China Link Africa Logo" width={160} height={50} className="h-12 w-auto" />
+                            <span className="text-2xl font-bold">China Link Africa</span>
                         </div>
                         <p className="text-sm leading-6 text-gray-300">
                             Votre partenaire de confiance pour les études, les voyages d'affaires et le tourisme en Chine.
@@ -71,7 +72,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-6 space-y-4">
                                     <li className="flex items-center gap-2 text-sm text-gray-300">
                                         <Mail className="h-4 w-4 text-primary" />
-                                        <span>contact@sao-chine.com</span>
+                                        <span>contact@chinalinkafrica.com</span>
                                     </li>
                                     <li className="flex items-center gap-2 text-sm text-gray-300">
                                         <Phone className="h-4 w-4 text-primary" />
@@ -88,7 +89,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
                     <p className="text-xs leading-5 text-gray-400">
-                        &copy; {new Date().getFullYear()} SAO Chine. Tous droits réservés.
+                        &copy; {new Date().getFullYear()} China Link Africa. Tous droits réservés.
                     </p>
                 </div>
             </div>

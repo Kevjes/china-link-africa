@@ -8,8 +8,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SAO Chine - Bourses d'études et Voyages",
-  description: "Votre portail pour les bourses d'études en Chine, l'assistance visa et le tourisme.",
+  title: "China Link Africa - Bourses d'études et Voyages",
+  description: "Votre portail pour les bourses d'études en Chine, l'assistance visa et le tourisme. Connecter l'Afrique et la Chine.",
 };
 
 export default function RootLayout({
