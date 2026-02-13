@@ -11,9 +11,8 @@ export default function Footer() {
             <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8">
-                        <div className="flex items-center gap-2 mb-4 p-4 rounded-xl inline-flex">
-                            <Image src="/images/logo.png" alt="China Link Africa Logo" width={160} height={50} className="h-12 w-auto" />
-                            <span className="text-2xl font-bold">China Link Africa</span>
+                        <div className="flex items-center gap-2 mb-4 rounded-xl inline-flex">
+                            <Image src="/images/logo-transparent.png" alt="China Link Africa Logo" width={150} height={50} className="h-18 w-auto rounded-lg" />
                         </div>
                         <p className="text-sm leading-6 text-gray-300">
                             Votre partenaire de confiance pour les études, les voyages d'affaires et le tourisme en Chine.

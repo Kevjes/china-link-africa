@@ -16,13 +16,13 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 text-center">
           <div className="mx-auto max-w-4xl">
             <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-7xl mb-8 drop-shadow-sm">
-              Connectez-vous à la <span className="text-secondary">Chine</span> avec <br className="hidden sm:block" />
+              Connectez-vous à la <span className="text-green-500">Chine</span> avec <br className="hidden sm:block" />
               <span className="text-white">China Link Africa</span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-gray-100 max-w-2xl mx-auto">

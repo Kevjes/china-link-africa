@@ -41,8 +41,7 @@ export default function Navbar() {
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5 flex items-center">
-                        <Image src="/images/logo.png" alt="China Link Africa Logo" width={180} height={60} className="h-14 w-auto" priority />
-                        <span className="text-2xl font-extrabold tracking-tight text-primary">China Link Africa</span>
+                        <Image src="/images/logo-transparent.png" alt="China Link Africa Logo" width={180} height={60} className="h-18 w-auto" priority />
                     </Link>
                 </div>
                 <div className="flex lg:hidden">
@@ -81,7 +80,7 @@ export default function Navbar() {
                     <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
                             <Link href="/" className="-m-1.5 p-1.5 flex items-center" onClick={() => setMobileMenuOpen(false)}>
-                                <Image src="/images/logo.png" alt="China Link Africa Logo" width={150} height={50} className="h-12 w-auto" />
+                                <Image src="/images/logo-transparent.png" alt="China Link Africa Logo" width={150} height={50} className="h-18 w-auto" />
                             </Link>
                             <button
                                 type="button"
