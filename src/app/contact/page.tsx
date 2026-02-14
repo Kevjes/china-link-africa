@@ -38,8 +38,8 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900">Téléphone / WhatsApp</h3>
-                                    <p className="text-gray-600 mt-1 mb-1">+86 123 4567 8910 (Chine)</p>
-                                    <p className="text-gray-600">+237 690 00 00 00 (Cameroun)</p>
+                                    <p className="text-gray-600 mt-1 mb-1">+86 150 4163 6209 (Chine)</p>
+                                    <p className="text-gray-600">+237 691 23 15 54 (Cameroun)</p>
                                 </div>
                             </div>
 
@@ -49,7 +49,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900">Email</h3>
-                                    <p className="text-gray-600 mt-1">contact@chinalinkafrica.com</p>
+                                    <p className="text-gray-600 mt-1">contact@chinalinkafrica.net</p>
                                 </div>
                             </div>
 

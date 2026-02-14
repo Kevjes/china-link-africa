@@ -71,11 +71,11 @@ export default function Footer() {
                                 <ul role="list" className="mt-6 space-y-4">
                                     <li className="flex items-center gap-2 text-sm text-gray-300">
                                         <Mail className="h-4 w-4 text-primary" />
-                                        <span>contact@chinalinkafrica.com</span>
+                                        <span>contact@chinalinkafrica.net</span>
                                     </li>
                                     <li className="flex items-center gap-2 text-sm text-gray-300">
                                         <Phone className="h-4 w-4 text-primary" />
-                                        <span>+86 123 4567 8910</span>
+                                        <span>+86 150 4163 6209</span>
                                     </li>
                                     <li className="flex items-center gap-2 text-sm text-gray-300">
                                         <MapPin className="h-4 w-4 text-primary" />
