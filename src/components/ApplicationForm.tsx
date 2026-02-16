@@ -24,12 +24,27 @@ export default function ApplicationForm() {
 
     const onSubmit = async (data: ApplicationFormValues) => {
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        console.log(data);
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        reset();
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to send email');
+            }
+
+            setIsSuccess(true);
+            reset();
+        } catch (error) {
+            console.error(error);
+            alert("Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer plus tard ou nous contacter directement sur WhatsApp.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     if (isSuccess) {
