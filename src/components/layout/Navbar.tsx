@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X, GraduationCap, Plane, Briefcase, Phone, Handshake } from "lucide-react";
+import { Menu, X, GraduationCap, Plane, Briefcase, Phone, Handshake, ArrowRightLeft } from "lucide-react";
 import Image from "next/image";
 import { Button } from "../ui/Button";
 
@@ -11,6 +11,7 @@ const navigation = [
     { name: "Bourses", href: "/bourses", icon: GraduationCap },
     { name: "Voyage & Visa", href: "/voyage", icon: Plane },
     { name: "Services", href: "/services", icon: Briefcase },
+    { name: "Change", href: "/change", icon: ArrowRightLeft },
     { name: "Opportunité", href: "/opportunite", icon: Handshake },
     { name: "Contact", href: "/contact", icon: Phone },
 ];

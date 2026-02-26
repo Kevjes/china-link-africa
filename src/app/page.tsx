@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, GraduationCap, Plane, Globe, Award } from "lucide-react";
+import { ArrowRight, GraduationCap, Plane, Globe, Award, ArrowRightLeft, Wallet, Zap } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -134,6 +134,45 @@ export default function Home() {
                 fill
                 className="object-cover"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Change Money Section */}
+      <section className="py-24 bg-gray-50 sm:py-32 border-b border-gray-100">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/business&sourcing.png"
+                alt="Change de Monnaie vers RMB"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
+                Change de Monnaie <span className="text-4xl">💰</span>
+              </h2>
+              <p className="text-lg leading-8 text-gray-600 mb-8">
+                Simplifiez vos transactions avec la Chine. Échangez vos <strong className="text-gray-900">Dollars (USD)</strong> et <strong className="text-gray-900">Francs CFA (FCFA)</strong> en Yuan chinois (RMB) en toute sécurité et au meilleur taux.
+              </p>
+              <div className="space-y-5 mb-10">
+                <div className="flex items-center gap-4 text-gray-700 font-semibold bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                  <div className="bg-red-50 p-2 rounded-lg text-primary"><Wallet className="h-6 w-6" /></div>
+                  <span>Rechargement vers Alipay et WeChat Pay</span>
+                </div>
+                <div className="flex items-center gap-4 text-gray-700 font-semibold bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                  <div className="bg-red-50 p-2 rounded-lg text-primary"><Zap className="h-6 w-6" /></div>
+                  <span>Rapide & Taux hautement compétitifs</span>
+                </div>
+              </div>
+              <Link href="/change">
+                <Button size="lg" className="bg-primary hover:bg-red-700 text-white font-bold px-8 h-12 shadow-lg transition-all hover:scale-105">
+                  Faire un change maintenant <ArrowRightLeft className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
