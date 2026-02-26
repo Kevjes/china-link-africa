@@ -11,3 +11,13 @@ export const applicationSchema = z.object({
 });
 
 export type ApplicationFormValues = z.infer<typeof applicationSchema>;
+
+export const changeMoneySchema = z.object({
+    fullName: z.string().min(2, "Le nom complet est requis"),
+    phone: z.string().min(8, "Numéro WhatsApp requis"),
+    amount: z.string().min(1, "Le montant est requis"),
+    currency: z.enum(["USD", "FCFA"]),
+    paymentMethod: z.enum(["alipay", "wechat_pay", "bank_transfer"]),
+});
+
+export type ChangeMoneyFormValues = z.infer<typeof changeMoneySchema>;
