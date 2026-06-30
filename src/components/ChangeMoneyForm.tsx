@@ -89,6 +89,19 @@ export default function ChangeMoneyForm() {
                     </div>
 
                     <div className="space-y-2">
+                        <label className="text-sm font-medium leading-none">Email</label>
+                        <Input
+                            type="email"
+                            placeholder="email@exemple.com"
+                            {...register("email")}
+                            className={errors.email ? "border-red-500" : ""}
+                        />
+                        {errors.email && (
+                            <p className="text-sm text-red-500">{errors.email.message}</p>
+                        )}
+                    </div>
+
+                    <div className="space-y-2">
                         <label className="text-sm font-medium leading-none">Numéro WhatsApp</label>
                         <Input
                             type="tel"

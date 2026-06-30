@@ -5,7 +5,7 @@ import { ChangeMoneyFormValues } from '@/lib/schemas';
 export async function POST(req: Request) {
     try {
         const body: ChangeMoneyFormValues = await req.json();
-        const { fullName, phone, amount, currency, paymentMethod } = body;
+        const { fullName, email, phone, amount, currency, paymentMethod } = body;
 
         const transporter = nodemailer.createTransport({
             host: process.env.EMAIL_HOST,
@@ -28,6 +28,7 @@ export async function POST(req: Request) {
         const mailOptions = {
             from: `"China Link Africa Change" <${process.env.EMAIL_USER}>`,
             to: "contact@chinalinkafrica.net",
+            replyTo: email,
             subject: `Demande de Change - ${amount} ${currency} - ${fullName}`,
             html: `
                 <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eaeaea; border-radius: 8px;">
@@ -41,14 +42,18 @@ export async function POST(req: Request) {
                             <td style="padding: 12px; border: 1px solid #ddd;">${fullName}</td>
                         </tr>
                         <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">Adresse Email</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><a href="mailto:${email}" style="color: #007bff; text-decoration: none;">${email}</a></td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
                             <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">Numéro WhatsApp</td>
                             <td style="padding: 12px; border: 1px solid #ddd;"><a href="https://wa.me/${phone.replace(/\D/g, '')}" style="color: #007bff; text-decoration: none;">${phone}</a></td>
                         </tr>
-                        <tr style="background-color: #f9f9f9;">
+                        <tr>
                             <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">Montant à Changer</td>
                             <td style="padding: 12px; border: 1px solid #ddd; color: #d32f2f; font-weight: bold; font-size: 16px;">${amount} ${currency}</td>
                         </tr>
-                        <tr>
+                        <tr style="background-color: #f9f9f9;">
                             <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">Mode de Réception</td>
                             <td style="padding: 12px; border: 1px solid #ddd;">${getPaymentMethodText(paymentMethod)}</td>
                         </tr>
